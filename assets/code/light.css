@@ -1,0 +1,31 @@
+body {
+    background-color: light;
+    color: black;
+}
+.container {
+    padding-left: 12%;
+    padding-right: 12%;
+}
+.container2 {
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top:1%;
+    padding: 1%;
+    border-radius: 10px;
+    background-color: #e4f0f7;
+}
+.navbar {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    background-color: #93cbed;
+}
+.container3 {
+    display: inline-flex;
+}
+.block1 {
+    margin:1%;
+    padding:1%;
+    background-color: #e4f0f7;
+    border-radius: 10px;
+}
