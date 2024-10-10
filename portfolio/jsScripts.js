@@ -1,13 +1,3 @@
-function invertColors() {
-    const body = document.body;
-    body.style.filter = body.style.filter === 'invert(100%)' ? 'none' : 'invert(100%)';
-}
-
-function changeCSS(cssFile) {
-    const linkElement = document.querySelector('link[rel="stylesheet"]');
-    linkElement.href = cssFile;
-}
-
 function changeColorMode() {
     const styleElement = document.getElementById('st');
 
