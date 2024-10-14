@@ -1,13 +1,13 @@
 function changeColorMode() {
     const styleElement = document.getElementById('st');
-    const absoluteURL = new URL('../assets/code/dark.css', window.location.href).href;
+    const absoluteURL = new URL('assets/code/dark.css', window.location.href).href;
 
     console.log(styleElement.href)
     if (styleElement.href == absoluteURL) {
-        styleElement.href = '../assets/code/light.css';
+        styleElement.href = 'assets/code/light.css';
         console.log('color changed to light');
     } else {
-        styleElement.href = '../assets/code/dark.css';
+        styleElement.href = 'assets/code/dark.css';
         console.log('color changed to dark');
     }
     writeCookies();
