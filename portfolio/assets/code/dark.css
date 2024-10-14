@@ -29,3 +29,12 @@ body {
     background-color: #101624;
     border-radius: 10px;
 }
+.btn-outline-custom1 {
+    border-color: white;
+    color: white;
+    border-width: 1px;
+}
+.btn-outline-custom1:hover {
+    background-color: white;
+    color:black;
+}

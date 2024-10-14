@@ -1,5 +1,5 @@
 body {
-    background-color: light;
+    background-color: white;
     color: black;
 }
 .container {
@@ -29,3 +29,12 @@ body {
     background-color: #e4f0f7;
     border-radius: 10px;
 }
+.btn-outline-custom1 {
+    border-color: black;
+    border-width: 1px;
+}
+.btn-outline-custom1:hover {
+    background-color: black;
+    color:white;
+}
+
