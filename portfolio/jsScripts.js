@@ -1,6 +1,6 @@
 function pageLoad() {
     console.log("body loaded");
-
+    loadCookies();
 }
 
 function changeColorMode() {
@@ -34,7 +34,11 @@ function writeCookies() {
 }
 
 function loadCookies() {
-    
+    if (document.cookie.includes("dark")) {
+        console.log("darkAKSJFHKLSADJGHDSGJKLHDSLGKJ");
+    } else {
+        console.log("LIGHTASJHFLJDAKGHADKJGHLJKAGDHLKGJDHLKDJGHKAJDGHLAJKDGHLADGKJHLAGKDJHLKGJDAHADLGKJH");
+    }
 }
 
 function clearCookies() {
