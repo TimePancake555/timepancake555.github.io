@@ -1,3 +1,8 @@
+function pageLoad() {
+    console.log("body loaded");
+
+}
+
 function changeColorMode() {
     const styleElement = document.getElementById('st');
     const absoluteURL = new URL('assets/code/dark.css', window.location.href).href;
@@ -26,6 +31,10 @@ function writeCookies() {
         console.log('wrote dark to cookie color');
     }
     displayCookies();
+}
+
+function loadCookies() {
+    
 }
 
 function clearCookies() {
