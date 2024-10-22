@@ -41,3 +41,25 @@ function displayCookies() {
     let x = document.cookie;
     console.log('current cookies: ' + x);
 }
+
+// function useSearch(element,val) {
+//    changeVisibility(element,element.textContent.toLowerCase().includes(val));
+// }
+
+// solver=document.getElementById("solver");
+// bot=document.getElementById("bot");
+// paint=document.getElementById("paint");
+// eg=document.getElementById("eg");
+// smellEL=document.getElementById("smell");
+// const elements=[solver,bot,paint,eg,smellEL]
+// searchForm=document.getElementById("search-form")
+// searchBar=document.getElementById("search-bar");
+// searchForm.addEventListener("submit",(e)=>{
+ 
+// e.preventDefault();
+// searchValue=searchBar.value.toLowerCase();
+// for(let element of elements) {
+//     useSearch(element,searchValue)
+// }
+
+// })
