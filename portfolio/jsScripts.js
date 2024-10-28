@@ -34,6 +34,8 @@ function writeCookies() {
 }
 
 function loadCookies() {
+    const styleElement = document.getElementById('st');
+    const absoluteURL = new URL('assets/code/dark.css', window.location.href).href;
     if (document.cookie.includes("dark")) {
         console.log("darkAKSJFHKLSADJGHDSGJKLHDSLGKJ");
     } else {
