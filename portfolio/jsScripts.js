@@ -1,5 +1,6 @@
 function pageLoad() {
     console.log("body loaded");
+    displayCookies();
     loadCookies();
 }
 
@@ -36,19 +37,29 @@ function writeCookies() {
 function loadCookies() {
     const styleElement = document.getElementById('st');
     const absoluteURL = new URL('assets/code/dark.css', window.location.href).href;
+
+    let cookieJar = String(document.cookie).split('=');
+
     if (document.cookie.includes("dark")) {
-        console.log("darkAKSJFHKLSADJGHDSGJKLHDSLGKJ");
+        styleElement.href = 'assets/code/dark.css';
+        console.log('darks mode loaded');
     } else {
-        console.log("LIGHTASJHFLJDAKGHADKJGHLJKAGDHLKGJDHLKDJGHKAJDGHLAJKDGHLADGKJHLAGKDJHLKGJDAHADLGKJH");
+        styleElement.href= 'assets/code/light.css';
+        console.log('light mode loaded');
     }
 }
 
 function clearCookies() {
-    let cookieJar = document.cookie.split(';');
-    for (var i = 0; i < cookieJar.length; i++) {
-        let currentCookie = cookieJar.split('=')[0].trim();
-        document.cookie = currentCookie + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/';
+    let cookieJar = String(document.cookie);
+    let splitCookieJar = cookieJar.split('=');
+    for (let i = 0; i < splitCookieJar.length; i++) {
+        splitCookieJar[i] = splitCookieJar[i].replaceAll(';', '').trim();
+        if (i % 2 == 0) {
+            let currentCookie = splitCookieJar[i];
+            document.cookie = currentCookie + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/';
+        }
     }
+    console.log(splitCookieJar);
     displayCookies();
 }
 
