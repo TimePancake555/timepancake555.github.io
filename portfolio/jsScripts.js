@@ -1,4 +1,17 @@
+
+
+function disableLoop() { 
+    x.loop = false;
+    x.load();
+} 
+
+function checkLoop() { 
+    alert(x.loop);
+} 
+
 function pageLoad() {
+    alert('This page uses cookies. By continuing, you concent to the use of cookies. No advertisment cookies are used and all cookies are for websit function purposes only. ')
+    // alert('headphone warning');
     console.log("body loaded");
     displayCookies();
     loadCookies();
